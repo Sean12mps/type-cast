@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "type-cast",
+  "description": "Helps you type without keyboard.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+      "js": ["pkg/assets/js/ext-ui.min.js","pkg/assets/js/ext-main.min.js"],
+      "css": ["pkg/assets/css/style.min.css","pkg/assets/css/bttn.min.css","pkg/assets/css/keyboard-dark.min.css"]
+    }
+  ],
+  "icons": {
+    "16": "pkg/assets/img/icon.png",
+    "48": "pkg/assets/img/icon.png",
+    "128": "pkg/assets/img/icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": ["pkg/assets/js/ext-ui.min.js","pkg/assets/js/ext-background.min.js"],
+    "persistent": true
+  }
+}

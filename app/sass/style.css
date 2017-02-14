@@ -1,0 +1,73 @@
+@import 'mods/colors';
+@import 'parts/buttons';
+
+body {
+	
+	#extension-window-search {
+		display: none;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		min-height: 80px;
+		z-index: 9999999999;
+		background-color: rgba( 255,255,255,0.6 );
+
+		.ui-keyboard.ui-widget-content {
+			width: 100vw!important;
+			overflow: hidden;
+		}
+
+		.ui-keyboard-preview,
+		.ui-keyboard-preview:focus, {
+			outline: none!important;
+			font-size: 30px!important;
+			text-align: center!important;
+			background-color: transparent!important;
+			width: 100%!important;
+			color: #ffffff!important;
+			border: none!important;
+			padding: 20px!important;
+			position: relative!important;
+			left: -20px!important;
+		}
+
+		.ui-keyboard-button {
+			width: 80px;
+			height: 40px;
+
+			span {
+				font-size: 20px;
+			}
+
+		}
+
+		/* keys with more than one character inside */
+		.ui-keyboard-widekey {
+			width: 120px;
+
+			span {
+				font-size: 20px;
+			}
+
+		}
+
+		.ui-keyboard-actionkey {
+
+			span {
+				top: 0px!important;
+				left: 0px!important;
+				font-size: 17px!important;
+			}
+
+		}
+		
+		.ui-keyboard-space {
+
+		    width: 400px;
+
+		}
+
+	}
+
+}
